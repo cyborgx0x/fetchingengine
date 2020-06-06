@@ -1,6 +1,5 @@
-def app(environ, start_response):
-    data = b"Hello,World!\n"
-    start_response ("200 OK", [("Content-Type", "text/plain"),
-                               ("Content-Length", str(len(data)))
-                               ])
-    return  iter([data])
+from core.models import printallpost
+from getnews import get_news
+
+link=(input("paste the link here: "))
+get_news(link)
