@@ -1,5 +1,4 @@
-from core.models import printallpost
-from getnews import get_news
+import core
 
-link=(input("paste the link here: "))
-get_news(link)
+if __name__ = "__main__":
+    core.main()
